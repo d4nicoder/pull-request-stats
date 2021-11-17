@@ -1,7 +1,7 @@
 const calculateReviewsStats = require('./calculateReviewsStats');
 const groupReviews = require('./groupReviews');
 const core = require('@actions/core');
-const reviewers = core.getInput('reviewers').split(',')
+const reviewers = core.getInput('reviewers').split(',').filter(reviewer => reviewer.trim() !== '')
 
 console.log(typeof reviewers)
 console.log(reviewers)
