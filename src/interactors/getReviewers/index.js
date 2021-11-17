@@ -3,7 +3,8 @@ const groupReviews = require('./groupReviews');
 const core = require('@actions/core');
 const reviewers = core.getInput('reviewers')
 
-console.log(`Reviewers: ...${reviewers.split(',')}...`)
+console.log(typeof reviewers)
+console.log(reviewers.split(','))
 
 module.exports = (pulls) => groupReviews(pulls).map(({ author, reviews }) => {
   const stats = calculateReviewsStats(reviews);
