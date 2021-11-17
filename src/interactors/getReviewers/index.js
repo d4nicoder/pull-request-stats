@@ -1,10 +1,10 @@
 const calculateReviewsStats = require('./calculateReviewsStats');
 const groupReviews = require('./groupReviews');
 const core = require('@actions/core');
-const reviewers = core.getInput('reviewers')
+const reviewers = core.getInput('reviewers').split(',')
 
 console.log(typeof reviewers)
-console.log(reviewers.split(','))
+console.log(reviewers)
 
 module.exports = (pulls) => groupReviews(pulls).map(({ author, reviews }) => {
   const stats = calculateReviewsStats(reviews);
