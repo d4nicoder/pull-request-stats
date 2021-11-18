@@ -10,7 +10,7 @@ jobs:
         uses: d4nicoder/pull-request-stats@master
         with:
           token: '${{ secrets.TOKEN }}'
-          repositories: 'pull-request-stats'
+          repositories: 'd4nicoder/pull-request-stats'
           period: 7
           charts: true
           disable-links: true
