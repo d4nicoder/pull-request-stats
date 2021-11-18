@@ -147,6 +147,6 @@ This project is maintained by a single person, considering supporting the projec
 * Joining the [community](https://discord.gg/SGYbZkac).
 * Becoming a [sponsor](https://github.com/sponsors/manuelmhtr).
 
-### License:
+### License
 
 AGPLv3
